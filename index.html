@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target</title>
+    <link
+      rel="shortcut icon"
+      href="img/id-card-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="titleylogo"><lord-icon
+            class="icon"
+            src="https://cdn.lordicon.com/vdjwmfqs.json"
+            trigger="hover">
+          </lord-icon>
+          <span class="main_title">Target Kiner</span>
+        </div>
+        <ul class="listas_navbar">
+          <li class="home_navbar">Home</li>
+          <li class="contacto_navbar">Contáctanos</li>
+          <li class="registros_navbar">Registros</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="datos_tarjeta">
+      <form class="formulario" method="post" action="">
+        <article class="nombreCompleto">
+          <br />
+          <label>Datos básicos:</label>
+          <br>
+          <label for="name_datos">Nombre Completo:</label>
+          <input
+            type="text"
+            maxlength="100"
+            class="name_datos"
+            name="name"
+            placeholder="Nombre Completo"
+          />
+        </article>
+        <article class="titulo">
+          <label for="titulo_datos">Titulo Profesional:</label>
+          <input
+            type="text"
+            maxlength="100"
+            class="titulo_datos"
+            name="titulo"
+            placeholder="Titulo/Cargo"
+          />
+        </article>
+        <article>
+          <label for="empresa_datos">Empresa en la que trabaja:</label>
+          <input
+            type="text"
+            maxlength="100"
+            class="empresa_datos"
+            name="empresa"
+            placeholder="Empresa"
+          />
+          <br />
+        </article>
+        <article>
+          <label>Datos de Contacto:</label>
+          <br />
+          <label for="numero_datos">Numero de Contacto:</label>
+          <input
+            type="text"
+            maxlength="10"
+            class="numero_datos"
+            name="numero"
+            placeholder="Número de Contacto"
+          />
+        </article>
+        <article>
+          <label for="email_datos">Correo Electrónico:</label>
+          <input
+            type="email"
+            maxlength="30"
+            class="email_datos"
+            name="email"
+            placeholder="Correo Electrónico @"
+          />
+        </article>
+        <article>
+          <label for="direccion_datos">Dirección:</label>
+          <input
+            type="text"
+            maxlength="100"
+            class="direccion_datos"
+            name="direccion"
+            placeholder="Dirección Física"
+          />
+        </article>
+        <article>
+          <label for="redesSociales_datos">Redes Sociales:</label>
+          <input
+            type="text"
+            maxlength="100"
+            class="redesSociales_datos"
+            name="RedSocial"
+            placeholder="Redes Sociales"
+          />
+        </article>
+        <article>
+          <label for="LinkedIn_datos">LinkedIn:</label>
+          <input
+            type="url"
+            maxlength="50"
+            class="LinkedIn_datos"
+            name="LinkedIn"
+            placeholder="URL de tu LinkedIn"
+          />
+        </article>
+        <input type="submit" />
+      </form>
+    </section>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script
+      src="https://kit.fontawesome.com/165b4cf562.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
