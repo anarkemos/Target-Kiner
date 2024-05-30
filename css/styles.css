@@ -1,0 +1,356 @@
+:root{
+    --primary-color: linear-gradient(#181124, #181124);
+    --secondary-color: #1a1033;
+    --background-color: #1a1033;
+    --primary-font: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--primary-color);
+    font-family: "Euclid Circular A", "Poppins";
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    position: relative;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+
+.titleylogo {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  width: 20%;
+}
+.icon {
+  min-width: 80px;
+  height: 80px;
+  margin: 1rem;
+  
+}
+.main_title {
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  width: 300px;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #5919D2;
+  align-items: center;
+}
+.listas_navbar {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.listas_navbar li {
+  list-style: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  font-size: 20px;
+}
+
+.listas_navbar li a{
+    text-decoration: none;
+    font-style: none;
+    color: black;
+
+}
+.datos_tarjeta {
+  display: flex;
+  width: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.mitio{
+    border: 2px solid white;
+    color: whitesmoke;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    position: absolute;
+    overflow-y: hidden;
+    font-family: var(--primary-font);
+}
+.formulario{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+}
+/* Estilos de la scrollbar del formulario */
+.formulario::-webkit-scrollbar{
+    width: 15px;
+    height: auto;
+    border-radius: 50px;
+    position: relative;
+}
+
+
+.formulario::-webkit-scrollbar-button:start:decrement{
+    display: block;
+    border-radius: 4px;
+    width: auto;
+    height: 15px;
+    display: block;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/crossbar/caret-up-solid.svg);
+}
+.formulario::-webkit-scrollbar-button:end:increment{
+    display: block;
+    border-radius: 4px;
+    width: auto;
+    height: 15px;
+    display: block;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/crossbar/caret-down-solid.svg);
+    margin-bottom: 20px;
+}
+.formulario::-webkit-scrollbar-button:hover{
+    background-color: #aaa;
+}
+
+.formulario::-webkit-scrollbar-thumb{
+    
+    width: auto;
+    height: auto;
+    background-color: #401e53 ;
+    border-radius: 10px;
+}
+
+
+
+/* Estilos de los titulos e imputs del formulario */
+
+.datosBasicosTitulo{
+    color: rgb(245, 244, 204);
+    display: flex;
+    font-family: var(--primary-font);
+}
+
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.titulo{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.titulo_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+.nombreCompleto{
+    color: red;
+    font-family: var(--primary-font);
+}
+
+.name_datos{
+    background-color: #1a1033;
+    border: none;
+    border-bottom: .5px solid white;
+    width: var(--lalala);    
+}
+
+
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .socials {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socials a {
+    font-size: 24px;
+    
+  }
+  
+  .links {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .legal {
+    font-size: 12px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(3) scaleX(2.25);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+  }
+  
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    color: white;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    width: 100%;
+  }
+  
+  @media screen and (width > 420px) and (width<900px) {
+    section {
+      align-items: center;
+      padding-left: 0;
+      gap: 20px;
+    }
+  
+    .links {
+      gap: 20px;
+    }
+    .navbar ul{
+        width: 60%;
+        margin-left: auto;
+    }
+    .main_title{
+        width: 100%;
+        margin: auto;
+    }
+    .icon{
+        min-width: 60px;
+    }
+    
+  }
+
+  
+  

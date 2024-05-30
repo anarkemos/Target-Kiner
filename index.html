@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Target</title>
     <link
@@ -9,32 +10,51 @@
       href="img/id-card-solid.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
-        <div class="titleylogo"><lord-icon
+        <div class="titleylogo">
+          <lord-icon
             class="icon"
             src="https://cdn.lordicon.com/vdjwmfqs.json"
-            trigger="hover">
+            trigger="hover"
+          >
           </lord-icon>
           <span class="main_title">Target Kiner</span>
         </div>
         <ul class="listas_navbar">
-          <li class="home_navbar">Home</li>
+          <li class="home_navbar"><a href="#">Home</a></li>
           <li class="contacto_navbar">Contáctanos</li>
           <li class="registros_navbar">Registros</li>
         </ul>
       </nav>
     </header>
     <section class="datos_tarjeta">
-      <form class="formulario" method="post" action="">
-        <article class="nombreCompleto">
+      <div class="mitio">
+        <form class="formulario" method="post" action="">
+        <br >
           <br />
-          <label>Datos básicos:</label>
-          <br>
-          <label for="name_datos">Nombre Completo:</label>
+          <div class="datosBasicosTitulo">
+            <h3>Datos básicos:</h3>
+          </div>
+          <br />
+          <label for="name_datos">
+            <h5 class="nombreCompleto">Nombre Completo:</h5></label>
           <input
             type="text"
             maxlength="100"
@@ -42,9 +62,10 @@
             name="name"
             placeholder="Nombre Completo"
           />
+          <br></br>
         </article>
         <article class="titulo">
-          <label for="titulo_datos">Titulo Profesional:</label>
+          <label for="titulo_datos"><h5>Titulo Profesional:</h5></label>
           <input
             type="text"
             maxlength="100"
@@ -52,6 +73,7 @@
             name="titulo"
             placeholder="Titulo/Cargo"
           />
+          <br></br>
         </article>
         <article>
           <label for="empresa_datos">Empresa en la que trabaja:</label>
@@ -64,6 +86,7 @@
           />
           <br />
         </article>
+        <br></br>
         <article>
           <label>Datos de Contacto:</label>
           <br />
@@ -76,6 +99,7 @@
             placeholder="Número de Contacto"
           />
         </article>
+        <br></br>
         <article>
           <label for="email_datos">Correo Electrónico:</label>
           <input
@@ -86,6 +110,7 @@
             placeholder="Correo Electrónico @"
           />
         </article>
+        <br></br>
         <article>
           <label for="direccion_datos">Dirección:</label>
           <input
@@ -96,6 +121,7 @@
             placeholder="Dirección Física"
           />
         </article>
+        <br></br>
         <article>
           <label for="redesSociales_datos">Redes Sociales:</label>
           <input
@@ -106,6 +132,7 @@
             placeholder="Redes Sociales"
           />
         </article>
+        <br></br>
         <article>
           <label for="LinkedIn_datos">LinkedIn:</label>
           <input
@@ -116,13 +143,95 @@
             placeholder="URL de tu LinkedIn"
           />
         </article>
+        <br></br>
         <input type="submit" />
       </form>
+    </div>
     </section>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script
       src="https://kit.fontawesome.com/165b4cf562.js"
       crossorigin="anonymous"
     ></script>
+
+    <footer>
+      <div class="background">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="100%"
+          height="100%"
+          viewBox="0 0 1600 900"
+        >
+          <defs>
+            <path
+              id="wave"
+              fill="rgba(105, 27, 252, 0.6)"
+              d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+      s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+            />
+          </defs>
+          <g>
+            <use xlink:href="#wave" opacity=".4">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="8s"
+                calcMode="spline"
+                values="270 230; -334 180; 270 230"
+                keyTimes="0; .5; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacity=".6">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="6s"
+                calcMode="spline"
+                values="-270 230;243 220;-270 230"
+                keyTimes="0; .6; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+            <use xlink:href="#wave" opacty=".9">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                dur="4s"
+                calcMode="spline"
+                values="0 230;-140 200;0 230"
+                keyTimes="0; .4; 1"
+                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                repeatCount="indefinite"
+              />
+            </use>
+          </g>
+        </svg>
+      </div>
+      <section>
+        <ul class="socials">
+          <li><a class="fa-brands fa-x-twitter"></a></li>
+          <li><a class="fa-brands fa-facebook"></a></li>
+          <li><a class="fa-brands fa-linkedin"></a></li>
+        </ul>
+        <ul class="links">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Skillset</a></li>
+          <li><a>Hire</a></li>
+        </ul>
+        <p class="legal">© 2024 All rights reserved</p>
+      </section>
+    </footer>
   </body>
 </html>
