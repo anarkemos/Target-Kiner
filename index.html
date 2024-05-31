@@ -45,16 +45,17 @@
       </nav>
     </header>
     <section class="datos_tarjeta">
-      <div class="mitio">
+      <div class="cajaFormulario  ">
         <form class="formulario" method="post" action="">
         <br >
           <br />
-          <div class="datosBasicosTitulo">
+          <div class="subtitle_datosBasicos">
             <h3>Datos básicos:</h3>
           </div>
           <br />
           <label for="name_datos">
-            <h5 class="nombreCompleto">Nombre Completo:</h5></label>
+            <h5 class="request_nombreCompleto">Nombre Completo:</h5>
+          </label>
           <input
             type="text"
             maxlength="100"
@@ -63,9 +64,9 @@
             placeholder="Nombre Completo"
           />
           <br></br>
-        </article>
-        <article class="titulo">
-          <label for="titulo_datos"><h5>Titulo Profesional:</h5></label>
+          <label for="titulo_datos">
+            <h5 class="request_titulo">Titulo Profesional:</h5>
+          </label>
           <input
             type="text"
             maxlength="100"
@@ -74,9 +75,9 @@
             placeholder="Titulo/Cargo"
           />
           <br></br>
-        </article>
-        <article>
-          <label for="empresa_datos">Empresa en la que trabaja:</label>
+          <label for="empresa_datos">
+            <h5 class="request_empresa">Empresa En La Que Trabaja:</h5>
+          </label>
           <input
             type="text"
             maxlength="100"
@@ -85,23 +86,33 @@
             placeholder="Empresa"
           />
           <br />
-        </article>
+
         <br></br>
-        <article>
-          <label>Datos de Contacto:</label>
+          <div>
+            <label class="subtitle_datosContacto">
+              <h3>Datos de Contacto:</h3>
+            </label>
+          </div>
           <br />
-          <label for="numero_datos">Numero de Contacto:</label>
+          <label for="numero_datos">
+            <h5 class="request_numeroContacto">
+              Numero de Contacto:
+            </h5>
+          </label>
           <input
             type="text"
             maxlength="10"
-            class="numero_datos"
+            class="numeroDeContacto_datos"
             name="numero"
             placeholder="Número de Contacto"
           />
-        </article>
+
         <br></br>
-        <article>
-          <label for="email_datos">Correo Electrónico:</label>
+          <label for="email_datos">
+            <h5 class="request_correoElectronico">
+              Correo Electrónico:
+            </h5>
+          </label>
           <input
             type="email"
             maxlength="30"
@@ -109,10 +120,13 @@
             name="email"
             placeholder="Correo Electrónico @"
           />
-        </article>
+        
         <br></br>
-        <article>
-          <label for="direccion_datos">Dirección:</label>
+          <label for="direccion_datos">
+            <h5 class="request_direccion">
+              Dirección:
+            </h5>
+          </label>
           <input
             type="text"
             maxlength="100"
@@ -120,10 +134,13 @@
             name="direccion"
             placeholder="Dirección Física"
           />
-        </article>
+
         <br></br>
-        <article>
-          <label for="redesSociales_datos">Redes Sociales:</label>
+          <label for="redesSociales_datos">
+            <h5 class="request_redesSociales">
+              Redes Sociales:
+            </h5>
+          </label>
           <input
             type="text"
             maxlength="100"
@@ -131,20 +148,23 @@
             name="RedSocial"
             placeholder="Redes Sociales"
           />
-        </article>
+
         <br></br>
-        <article>
-          <label for="LinkedIn_datos">LinkedIn:</label>
+          <label for="LinkedIn_datos">
+            <h5 class="request_linkedIn">
+              LinkedIn:
+            </h5>
+          </label>
           <input
             type="url"
             maxlength="50"
-            class="LinkedIn_datos"
+            class="linkedIn_datos"
             name="LinkedIn"
             placeholder="URL de tu LinkedIn"
           />
-        </article>
+
         <br></br>
-        <input type="submit" />
+        <input type="submit" class="bottom_enviar"/>
       </form>
     </div>
     </section>

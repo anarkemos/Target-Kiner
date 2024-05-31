@@ -80,7 +80,7 @@ body {
   justify-content: center;
   list-style: none;
 }
-.mitio{
+.cajaFormulario{
     border: 2px solid white;
     color: whitesmoke;
     padding: 10px;
@@ -147,24 +147,28 @@ body {
 
 /* Estilos de los titulos e imputs del formulario */
 
-.datosBasicosTitulo{
-    color: rgb(245, 244, 204);
+.subtitle_datosBasicos{
+    color: rgb(233, 232, 165);
     display: flex;
     font-family: var(--primary-font);
 }
 
-.nombreCompleto{
+/* Nombre completo */
+.request_nombreCompleto{
     color: red;
     font-family: var(--primary-font);
 }
 
 .name_datos{
     background-color: #1a1033;
-    border: none;
+    border: none;  
     border-bottom: .5px solid white;
-    width: var(--lalala);    
+    font-family: var(--primary-font);
+    width: 90%;   
 }
-.titulo{
+
+/* Titulo profesional */
+.request_titulo{
     color: red;
     font-family: var(--primary-font);
 }
@@ -173,87 +177,110 @@ body {
     background-color: #1a1033;
     border: none;
     border-bottom: .5px solid white;
-    width: var(--lalala);    
+    font-family: var(--primary-font);  
+    width: 90%;  
 }
-.nombreCompleto{
+
+/* Empresa en la que trabaja */
+.request_empresa{
     color: red;
     font-family: var(--primary-font);
 }
 
-.name_datos{
+.empresa_datos{
     background-color: #1a1033;
     border: none;
     border-bottom: .5px solid white;
-    width: var(--lalala);    
+    font-family: (--primary-font);
+    width: 90%;    
 }
-.nombreCompleto{
-    color: red;
-    font-family: var(--primary-font);
+/* Subtítulo "Datos básicos" */
+.subtitle_datosContacto{
+  color: rgb(233, 232, 165);
+  display: flex;
+  font-family: var(--primary-font);
 }
-
-.name_datos{
-    background-color: #1a1033;
+/* numero de contacto */
+.request_numeroContacto{
+  color: red;
+  font-family: var(--primary-font);
+}
+.numeroDeContacto_datos{
+  background-color: #1a1033;
     border: none;
     border-bottom: .5px solid white;
-    width: var(--lalala);    
+    font-family: (--primary-font);
+    width: 90%;
 }
-.nombreCompleto{
-    color: red;
-    font-family: var(--primary-font);
+/* correo electrónico */
+.request_correoElectronico{
+  color: red;
+  font-family: var(--primary-font);
 }
-
-.name_datos{
-    background-color: #1a1033;
+.email_datos{
+  background-color: #1a1033;
     border: none;
     border-bottom: .5px solid white;
-    width: var(--lalala);    
+    font-family: (--primary-font);
+    width: 90%;
 }
-.nombreCompleto{
-    color: red;
-    font-family: var(--primary-font);
+/* Dirección */
+.request_direccion{
+  color: red;
+  font-family: var(--primary-font);
 }
-
-.name_datos{
-    background-color: #1a1033;
+.direccion_datos{
+  background-color: #1a1033;
     border: none;
     border-bottom: .5px solid white;
-    width: var(--lalala);    
+    font-family: (--primary-font);
+    width: 90%;
 }
-.nombreCompleto{
-    color: red;
-    font-family: var(--primary-font);
+/* Redes sociales */
+.request_redesSociales{
+  color: red;
+  font-family: var(--primary-font);
+}
+.redesSociales_datos{
+  background-color: #1a1033;
+  border: none;
+  border-bottom: .5px solid white;
+  font-family: (--primary-font);
+  width: 90%;
+}
+/* LinkedIn */
+.request_linkedIn{
+  color: red;
+  font-family: var(--primary-font);
+}
+.linkedIn_datos{
+  background-color: #1a1033;
+  border: none;
+  border-bottom: .5px solid white;
+  font-family: (--primary-font);
+  width: 90%;
+}
+/* Botón enviar Formulario */
+
+.bottom_enviar{
+  border: none;
+  background: #401e53;
+  color: white;
+  box-shadow: 0px 4px 4px 1px black;
+  background-position: center;
+  width: 100px;
+  height: 20px;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.name_datos{
-    background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    width: var(--lalala);    
-}
-.nombreCompleto{
-    color: red;
-    font-family: var(--primary-font);
-}
-
-.name_datos{
-    background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    width: var(--lalala);    
-}
-.nombreCompleto{
-    color: red;
-    font-family: var(--primary-font);
-}
-
-.name_datos{
-    background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    width: var(--lalala);    
-}
 
 
+/* Estilos del fondo y footer */
 .background {
     position: absolute;
     z-index: -1;
@@ -328,6 +355,8 @@ body {
     width: 100%;
   }
   
+/* Mediaquerits */
+
   @media screen and (width > 420px) and (width<900px) {
     section {
       align-items: center;
