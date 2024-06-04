@@ -4,7 +4,21 @@
     --background-color: #1a1033;
     --primary-font: sans-serif;
 }
+/* !Estilos de los imputs */
+input:active,
+imput:focus{
+  background-color: transparent;
+}
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #1a1033 inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -145,122 +159,46 @@ body {
 
 
 
-/* Estilos de los titulos e imputs del formulario */
+/* !subtitulos principales del formulario */
 
-.subtitle_datosBasicos{
+.subtitle_datosBasicos, 
+.subtitle_datosContacto{
     color: rgb(233, 232, 165);
     display: flex;
     font-family: var(--primary-font);
 }
 
-/* Nombre completo */
-.request_nombreCompleto{
-    color: red;
-    font-family: var(--primary-font);
-}
-
-.name_datos{
-    background-color: #1a1033;
-    border: none;  
-    border-bottom: .5px solid white;
-    font-family: var(--primary-font);
-    width: 90%;   
-}
-
-/* Titulo profesional */
-.request_titulo{
-    color: red;
-    font-family: var(--primary-font);
-}
-
-.titulo_datos{
-    background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    font-family: var(--primary-font);  
-    width: 90%;  
-}
-
-/* Empresa en la que trabaja */
-.request_empresa{
-    color: red;
-    font-family: var(--primary-font);
-}
-
-.empresa_datos{
-    background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    font-family: (--primary-font);
-    width: 90%;    
-}
-/* Subtítulo "Datos básicos" */
-.subtitle_datosContacto{
-  color: rgb(233, 232, 165);
-  display: flex;
-  font-family: var(--primary-font);
-}
-/* numero de contacto */
-.request_numeroContacto{
-  color: red;
-  font-family: var(--primary-font);
-}
-.numeroDeContacto_datos{
-  background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    font-family: (--primary-font);
-    width: 90%;
-}
-/* correo electrónico */
-.request_correoElectronico{
-  color: red;
-  font-family: var(--primary-font);
-}
-.email_datos{
-  background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    font-family: (--primary-font);
-    width: 90%;
-}
-/* Dirección */
-.request_direccion{
-  color: red;
-  font-family: var(--primary-font);
-}
-.direccion_datos{
-  background-color: #1a1033;
-    border: none;
-    border-bottom: .5px solid white;
-    font-family: (--primary-font);
-    width: 90%;
-}
-/* Redes sociales */
-.request_redesSociales{
-  color: red;
-  font-family: var(--primary-font);
-}
-.redesSociales_datos{
-  background-color: #1a1033;
-  border: none;
-  border-bottom: .5px solid white;
-  font-family: (--primary-font);
-  width: 90%;
-}
-/* LinkedIn */
+/* !subtitulos de los imputs para el ingreso de datos */
+.request_nombreCompleto,
+.request_titulo,
+.request_empresa,
+.request_numeroContacto,
+.request_correoElectronico,
+.request_direccion,
+.request_redesSociales,
 .request_linkedIn{
   color: red;
-  font-family: var(--primary-font);
+    font-family: var(--primary-font);
 }
+
+/* !imputs para el ingreso de los datos */
+.name_datos, 
+.titulo_datos, 
+.empresa_datos, 
+.numeroDeContacto_datos, 
+.email_datos, .direccion_datos, 
+.redesSociales_datos, 
 .linkedIn_datos{
-  background-color: #1a1033;
+  background-color: transparent;
   border: none;
+  outline: none;
   border-bottom: .5px solid white;
   font-family: (--primary-font);
   width: 90%;
+  color: white;
+  font-size: 10px;
 }
-/* Botón enviar Formulario */
+/* !Botón enviar Formulario */
 
 .bottom_enviar{
   border: none;
@@ -278,9 +216,7 @@ body {
   transform: translateX(-50%);
 }
 
-
-
-/* Estilos del fondo y footer */
+/* !Estilos del fondo y footer */
 .background {
     position: absolute;
     z-index: -1;
@@ -355,7 +291,7 @@ body {
     width: 100%;
   }
   
-/* Mediaquerits */
+/* !Mediaquerits */
 
   @media screen and (width > 420px) and (width<900px) {
     section {
